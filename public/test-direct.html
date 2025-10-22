@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Test</title>
+</head>
+<body>
+    <h1>Direct Favorites Test</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function test() {
+            const result = document.getElementById('result');
+            
+            try {
+                // 1. Get users
+                result.innerHTML += '<p>Fetching users...</p>';
+                const userResponse = await fetch('/api/auth/users');
+                const userData = await userResponse.json();
+                result.innerHTML += '<p>Users response: ' + JSON.stringify(userData) + '</p>';
+                
+                const user = userData.users.find(u => u.id === 1);
+                result.innerHTML += '<p>User 1: ' + JSON.stringify(user) + '</p>';
+                result.innerHTML += '<p>Favorite IDs: ' + JSON.stringify(user.favoriteFilms) + '</p>';
+                
+                // 2. Get films
+                result.innerHTML += '<p>Fetching films...</p>';
+                const filmsResponse = await fetch('/api/films?limit=1000');
+                const filmsData = await filmsResponse.json();
+                result.innerHTML += '<p>Total films: ' + filmsData.films.length + '</p>';
+                
+                // 3. Filter
+                result.innerHTML += '<p>Filtering...</p>';
+                const favorites = filmsData.films.filter(f => user.favoriteFilms.includes(f.id));
+                result.innerHTML += '<p>Matched: ' + favorites.length + '</p>';
+                
+                favorites.forEach(f => {
+                    result.innerHTML += '<p>✓ ' + f.id + ': ' + f.title + '</p>';
+                });
+                
+            } catch (error) {
+                result.innerHTML += '<p style="color: red;">ERROR: ' + error.message + '</p>';
+                console.error(error);
+            }
+        }
+        
+        test();
+    </script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İzleme Listem - Film Sitesi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .watchlist-page {
+            padding: 80px 0 40px;
+            min-height: 100vh;
+        }
+
+        .page-header {
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .films-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .film-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .film-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .film-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .film-info {
+            padding: 15px;
+        }
+
+        .film-title {
+            font-size: 16px;
+            color: var(--text-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .film-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .film-year {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .film-rating {
+            color: #f39c12;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .remove-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .film-card:hover .remove-btn {
+            opacity: 1;
+        }
+
+        .remove-btn:hover {
+            background: var(--hover-color);
+            transform: scale(1.1);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 100px 20px;
+            color: var(--text-muted);
+        }
+
+        .empty-state i {
+            font-size: 80px;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .empty-state h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .empty-state p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .btn-browse {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-browse:hover {
+            background: var(--hover-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="url(#gradient1)"/>
+                            <path d="M15 12 L25 20 L15 28 Z" fill="#fff"/>
+                            <circle cx="20" cy="20" r="18" stroke="#e50914" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Cinexora</span>
+                    </a>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="tr" onclick="changeLanguage('tr')" title="Türkçe">
+                            <img src="https://flagcdn.com/w40/tr.png" alt="TR" width="24" height="18">
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="24" height="18">
+                        </button>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link" data-lang-key="home">Anasayfa</a></li>
+                    <li><a href="/filmler.html" class="nav-link" data-lang-key="movies">Filmler</a></li>
+                    <li><a href="/kategoriler.html" class="nav-link" data-lang-key="categories">Kategoriler</a></li>
+                    <li><a href="/hakkimizda.html" class="nav-link" data-lang-key="about">Hakkımızda</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div id="authButtons">
+                        <button class="btn-login" onclick="openLoginModal()">
+                            <i class="fas fa-user"></i> Giriş
+                        </button>
+                        <button class="btn-register" onclick="openRegisterModal()">
+                            Kayıt Ol
+                        </button>
+                    </div>
+                    <div id="userMenu" style="display: none; position: relative;">
+                        <button class="btn-login" onclick="toggleUserDropdown()" style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-user-circle"></i>
+                            <span id="headerUsername">Kullanıcı</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="userDropdown" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 10px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; z-index: 1000;">
+                            <a href="/profil.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-user"></i> <span data-lang-key="profile">Profilim</span></a>
+                            <a href="/favoriler.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-heart"></i> <span data-lang-key="favorites">Favorilerim</span></a>
+                            <a href="/izleme-listesi.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-list"></i> <span data-lang-key="watchlist">İzleme Listem</span></a>
+                            <a href="/admin.html" id="adminLink" style="display: none; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-shield-alt"></i> <span data-lang-key="adminPanel">Admin Panel</span></a>
+                            <a href="#" onclick="logout()" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none; border-top: 1px solid #333;"><i class="fas fa-sign-out-alt"></i> <span data-lang-key="logout">Çıkış Yap</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Watchlist Page -->
+    <section class="watchlist-page">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-list"></i> <span data-lang-key="myWatchlist">İzleme Listem</span></h1>
+                <p data-lang-key="moviesToWatch">İzlemek istediğiniz filmler</p>
+            </div>
+
+            <div id="filmsContainer" class="films-grid">
+                <div class="empty-state">
+                    <i class="fas fa-list"></i>
+                    <h2 data-lang-key="noWatchlist">İzleme listeniz boş</h2>
+                    <p data-lang-key="addWatchlistDesc">İzlemek istediğiniz filmleri listeye ekleyin</p>
+                    <button class="btn-browse" onclick="window.location.href='/filmler.html'">
+                        <i class="fas fa-film"></i> <span data-lang-key="browseMovies">Filmlere Göz At</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/lang.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        // Auth kontrolü
+        checkAuth();
+        
+        async function loadWatchlist() {
+            const token = localStorage.getItem('token');
+
+            if (!token) {
+                window.location.href = '/';
+                return;
+            }
+
+            const container = document.getElementById('filmsContainer');
+            container.innerHTML = '<div style="text-align: center; padding: 50px;"><i class="fas fa-spinner fa-spin" style="font-size: 48px;"></i><p>Yükleniyor...</p></div>';
+
+            try {
+                // Kullanıcı bilgilerini al
+                const userResponse = await fetch('/api/auth/users');
+                const userData = await userResponse.json();
+                const user = JSON.parse(localStorage.getItem('user') || '{}');
+                const currentUser = userData.users.find(u => u.id === user.id);
+                
+                console.log('Current user from API:', currentUser);
+                
+                // localStorage'ı güncelle
+                if (currentUser) {
+                    localStorage.setItem('user', JSON.stringify(currentUser));
+                }
+
+                console.log('Current user:', currentUser);
+                console.log('Watchlist:', currentUser?.watchlist);
+
+                if (!currentUser) {
+                    container.innerHTML = '<div class="empty-state"><i class="fas fa-list"></i><h2>Kullanıcı bulunamadı</h2></div>';
+                    return;
+                }
+
+                if (!currentUser.watchlist || currentUser.watchlist.length === 0) {
+                    container.innerHTML = '<div class="empty-state"><i class="fas fa-list"></i><h2>İzleme listeniz boş</h2><p>İzlemek istediğiniz filmleri listeye ekleyin</p></div>';
+                    return;
+                }
+
+                // Tüm filmleri al
+                const filmsResponse = await fetch('/api/films?limit=1000');
+                const filmsData = await filmsResponse.json();
+
+                console.log('All films count:', filmsData.films?.length);
+                console.log('User watchlist IDs:', currentUser.watchlist);
+
+                // İzleme listesindeki filmleri filtrele - basit includes kullan
+                const watchlistFilms = filmsData.films.filter(film => 
+                    currentUser.watchlist.includes(film.id)
+                );
+
+                console.log('Filtered watchlist films:', watchlistFilms.length);
+                console.log('Watchlist films:', watchlistFilms);
+
+                if (watchlistFilms.length === 0) {
+                    container.innerHTML = '<div class="empty-state"><i class="fas fa-list"></i><h2>İzleme listeniz boş</h2><p>İzlemek istediğiniz filmleri listeye ekleyin</p></div>';
+                    return;
+                }
+
+                container.innerHTML = watchlistFilms.map(film => `
+                    <div class="film-card" onclick="openFilmDetailModal(${film.id})">
+                        <button class="remove-btn" onclick="event.stopPropagation(); removeFromWatchlist(${film.id})" title="Listeden Çıkar">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <img src="${film.images?.poster || 'https://via.placeholder.com/250x350?text=Film'}" 
+                             alt="${film.title}" 
+                             onerror="this.src='https://via.placeholder.com/250x350?text=Film'">
+                        <div class="film-info">
+                            <h3 class="film-title">${film.title}</h3>
+                            <div class="film-meta">
+                                <span class="film-year">${film.year}</span>
+                                <span class="film-rating">
+                                    <i class="fas fa-star"></i>
+                                    ${film.rating.toFixed(1)}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('İzleme listesi yüklenemedi:', error);
+                container.innerHTML = '<div class="empty-state"><i class="fas fa-exclamation-triangle"></i><h2>Bir hata oluştu</h2></div>';
+            }
+        }
+
+        async function removeFromWatchlist(filmId) {
+            if (!confirm('Bu filmi izleme listesinden çıkarmak istediğinize emin misiniz?')) {
+                return;
+            }
+
+            try {
+                const user = JSON.parse(localStorage.getItem('user'));
+                const response = await fetch(`/api/films/${filmId}/watchlist`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ userId: user.id })
+                });
+
+                if (response.ok) {
+                    loadWatchlist();
+                }
+            } catch (error) {
+                console.error('Hata:', error);
+                alert('Bir hata oluştu');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadWatchlist);
+    </script>
+    
+    <!-- Film Detay Modal -->
+    <div id="filmDetailModal" class="modal">
+        <div class="modal-content film-detail-modal">
+            <span class="modal-close" onclick="closeFilmDetailModal()">&times;</span>
+            <div id="filmDetailContent" class="film-detail-content">
+                <!-- Film detayları buraya yüklenecek -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/modal-auth.js"></script>
+</body>
+</html>

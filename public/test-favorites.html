@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Favorites</title>
+</head>
+<body>
+    <h1>Test Favorites</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function test() {
+            const result = document.getElementById('result');
+            
+            // 1. User bilgisi
+            const user = { id: 1, favoriteFilms: [127, 128, 129, 138, 136, 126] };
+            result.innerHTML += '<p>User ID: ' + user.id + '</p>';
+            result.innerHTML += '<p>Favorite IDs: ' + JSON.stringify(user.favoriteFilms) + '</p>';
+            
+            // 2. Films API
+            const response = await fetch('/api/films?limit=1000');
+            const data = await response.json();
+            result.innerHTML += '<p>Total films: ' + data.films.length + '</p>';
+            
+            // 3. Filter
+            const favorites = data.films.filter(f => user.favoriteFilms.includes(f.id));
+            result.innerHTML += '<p>Matched favorites: ' + favorites.length + '</p>';
+            
+            favorites.forEach(f => {
+                result.innerHTML += '<p>- ' + f.id + ': ' + f.title + '</p>';
+            });
+        }
+        
+        test();
+    </script>
+</body>
+</html>

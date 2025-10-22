@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test All Movies</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background: #141414; color: #fff; }
+        .movie { 
+            border: 1px solid #333; 
+            padding: 15px; 
+            margin: 10px 0; 
+            background: #1f1f1f;
+            display: flex;
+            gap: 20px;
+        }
+        .movie img { 
+            width: 100px; 
+            height: 150px; 
+            object-fit: cover;
+        }
+        .movie-info { flex: 1; }
+        .status { 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .ok { background: #28a745; }
+        .missing { background: #dc3545; }
+        button { 
+            padding: 10px 20px; 
+            background: #e50914; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Film Kontrol Sayfası</h1>
+    <button onclick="checkAllMovies()">Tüm Filmleri Kontrol Et</button>
+    <div id="results"></div>
+    
+    <script>
+        async function checkAllMovies() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<p>Yükleniyor...</p>';
+            
+            try {
+                const response = await fetch('/api/films?limit=1000');
+                const data = await response.json();
+                const films = data.films;
+                
+                results.innerHTML = `<h2>Toplam Film: ${films.length}</h2>`;
+                
+                let missingTmdbCount = 0;
+                let missingPosterCount = 0;
+                
+                films.forEach(film => {
+                    const hasTmdbId = !!film.tmdbId;
+                    const hasPoster = !!film.images?.poster;
+                    
+                    if (!hasTmdbId) missingTmdbCount++;
+                    if (!hasPoster) missingPosterCount++;
+                    
+                    results.innerHTML += `
+                        <div class="movie">
+                            <img src="${film.images?.poster || 'https://via.placeholder.com/100x150?text=No+Poster'}" 
+                                 onerror="this.src='https://via.placeholder.com/100x150?text=Error'">
+                            <div class="movie-info">
+                                <h3>${film.title} (${film.year})</h3>
+                                <p>ID: ${film.id}</p>
+                                <div>
+                                    <span class="status ${hasTmdbId ? 'ok' : 'missing'}">
+                                        TMDB ID: ${film.tmdbId || 'YOK'}
+                                    </span>
+                                    <span class="status ${hasPoster ? 'ok' : 'missing'}">
+                                        Poster: ${hasPoster ? 'VAR' : 'YOK'}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                results.innerHTML = `
+                    <div style="background: #333; padding: 20px; margin-bottom: 20px; border-radius: 10px;">
+                        <h2>Özet</h2>
+                        <p>Toplam Film: ${films.length}</p>
+                        <p>TMDB ID Eksik: ${missingTmdbCount}</p>
+                        <p>Poster Eksik: ${missingPosterCount}</p>
+                    </div>
+                ` + results.innerHTML;
+                
+            } catch (error) {
+                results.innerHTML = '<p style="color: red;">Hata: ' + error.message + '</p>';
+            }
+        }
+        
+        // Sayfa yüklendiğinde otomatik kontrol et
+        checkAllMovies();
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Film Sitesi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="url(#gradient1)"/>
+                            <path d="M15 12 L25 20 L15 28 Z" fill="#fff"/>
+                            <circle cx="20" cy="20" r="18" stroke="#e50914" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#e50914;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Cinexora</span>
+                    </a>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" data-lang="tr" onclick="changeLanguage('tr')" title="Türkçe">
+                            <img src="https://flagcdn.com/w40/tr.png" alt="TR" width="24" height="18">
+                        </button>
+                        <button class="lang-btn" data-lang="en" onclick="changeLanguage('en')" title="English">
+                            <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="24" height="18">
+                        </button>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link" data-lang-key="home">Anasayfa</a></li>
+                    <li><a href="/filmler.html" class="nav-link" data-lang-key="movies">Filmler</a></li>
+                    <li><a href="/kategoriler.html" class="nav-link" data-lang-key="categories">Kategoriler</a></li>
+                    <li><a href="/hakkimizda.html" class="nav-link active" data-lang-key="about">Hakkımızda</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Film ara..." data-lang-key="searchPlaceholder">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div id="authButtons">
+                        <button class="btn-login" onclick="openLoginModal()">
+                            <i class="fas fa-user"></i> <span data-lang-key="login">Giriş</span>
+                        </button>
+                        <button class="btn-register" onclick="openRegisterModal()">
+                            <span data-lang-key="register">Kayıt Ol</span>
+                        </button>
+                    </div>
+                    <div id="userMenu" style="display: none; position: relative;">
+                        <button class="btn-login" onclick="toggleUserDropdown()" style="display: flex; align-items: center; gap: 8px;">
+                            <i class="fas fa-user-circle"></i>
+                            <span id="headerUsername">Kullanıcı</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div id="userDropdown" style="display: none; position: absolute; top: 100%; right: 0; margin-top: 10px; background: var(--card-bg); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); min-width: 200px; z-index: 1000;">
+                            <a href="/profil.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-user"></i> <span data-lang-key="profile">Profilim</span></a>
+                            <a href="/favoriler.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-heart"></i> <span data-lang-key="favorites">Favorilerim</span></a>
+                            <a href="/izleme-listesi.html" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-list"></i> <span data-lang-key="watchlist">İzleme Listem</span></a>
+                            <a href="/admin.html" id="adminLink" style="display: none; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none;"><i class="fas fa-shield-alt"></i> <span data-lang-key="adminPanel">Admin Panel</span></a>
+                            <a href="#" onclick="logout()" style="display: flex; align-items: center; gap: 10px; padding: 12px 20px; color: var(--text-color); text-decoration: none; border-top: 1px solid #333;"><i class="fas fa-sign-out-alt"></i> <span data-lang-key="logout">Çıkış Yap</span></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hakkımızda Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-info-circle"></i> <span data-lang-key="aboutUs">Hakkımızda</span></h1>
+                <p data-lang-key="aboutSubtitle">Cinexora - Film tutkularının buluşma noktası</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-lang-key="movieLoversAddress">Film Tutkularının Adresi</h2>
+                    <p data-lang-key="aboutPara1">
+                        Cinexora, sinema severlerin en iyi film deneyimini yaşaması için kurulmuş bir platformdur. 
+                        Binlerce film arasından favorilerinizi keşfedebilir, film hakkında detaylı bilgilere ulaşabilir 
+                        ve diğer kullanıcılarla görüşlerinizi paylaşabilirsiniz.
+                    </p>
+                    <p data-lang-key="aboutPara2">
+                        Misyonumuz, sinema kültürünü yaymak ve film severlere kapsamlı bir platform sunmaktır. 
+                        Klasik filmlerden en yeni yapımlara kadar geniş bir film arşivine sahip olan sitemiz, 
+                        kullanıcı dostu arayüzü ve gelişmiş filtreleme özellikleriyle size en iyi deneyimi sunmayı hedeflemektedir.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-film"></i>
+                        <h3 data-lang-key="wideArchive">Geniş Film Arşivi</h3>
+                        <p data-lang-key="wideArchiveDesc">Binlerce film arasından seçim yapın</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-search"></i>
+                        <h3 data-lang-key="advancedSearch">Gelişmiş Arama</h3>
+                        <p data-lang-key="advancedSearchDesc">Filtreleme ve sıralama özellikleriyle kolayce bulun</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3 data-lang-key="detailedInfo">Detaylı Bilgiler</h3>
+                        <p data-lang-key="detailedInfoDesc">Film hakkında her şeyi öğrenin</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3 data-lang-key="favoriteList">Favori Listesi</h3>
+                        <p data-lang-key="favoriteListDesc">Beğendiğiniz filmleri kaydedin</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3 data-lang-key="community">Topluluk</h3>
+                        <p data-lang-key="communityDesc">Diğer kullanıcılarla etkileşime geçin</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3 data-lang-key="mobileCompatible">Mobil Uyumlu</h3>
+                        <p data-lang-key="mobileCompatibleDesc">Her cihazdan erişim sağlayın</p>
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stat-card">
+                        <i class="fas fa-film"></i>
+                        <h3>1000+</h3>
+                        <p data-lang-key="moviesLabel">Film</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>50K+</h3>
+                        <p data-lang-key="usersLabel">Kullanıcı</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h3>100K+</h3>
+                        <p data-lang-key="ratingsLabel">Değerlendirme</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>250K+</h3>
+                        <p data-lang-key="commentsLabel">Yorum</p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h2 data-lang-key="contact">İletişim</h2>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@filmsitesi.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-lang-key="phone">Telefon</h4>
+                                <p>+90 555 123 4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-lang-key="address">Adres</h4>
+                                <p>İstanbul, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4 data-lang-key="workingHours">Çalışma Saatleri</h4>
+                                <p data-lang-key="online247">7/24 Online</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-film"></i> Cinexora</h3>
+                    <p data-lang-key="footerDesc">En iyi film deneyimi için doğru adres.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang-key="quickLinks">Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="/" data-lang-key="home">Anasayfa</a></li>
+                        <li><a href="/filmler.html" data-lang-key="movies">Filmler</a></li>
+                        <li><a href="/kategoriler.html" data-lang-key="categories">Kategoriler</a></li>
+                        <li><a href="/hakkimizda.html" data-lang-key="about">Hakkımızda</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cinexora. <span data-lang-key="allRightsReserved">Tüm hakları saklıdır</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-user-circle"></i>
+                <h2>Giriş Yap</h2>
+                <span class="modal-close" onclick="closeLoginModal()">&times;</span>
+            </div>
+            <form id="loginForm" class="modal-form">
+                <div id="loginError" class="error-message" style="display: none;"></div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> E-posta</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Şifre</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-sign-in-alt"></i> Giriş Yap
+                </button>
+                <p class="modal-switch">
+                    Hesabınız yok mu? <a href="#" onclick="switchToRegister()">Kayıt Ol</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-user-plus"></i>
+                <h2>Kayıt Ol</h2>
+                <span class="modal-close" onclick="closeRegisterModal()">&times;</span>
+            </div>
+            <form id="registerForm" class="modal-form">
+                <div id="registerError" class="error-message" style="display: none;"></div>
+                <div id="registerSuccess" class="success-message" style="display: none;"></div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Ad</label>
+                        <input type="text" id="registerFirstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Soyad</label>
+                        <input type="text" id="registerLastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-at"></i> Kullanıcı Adı</label>
+                    <input type="text" id="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> E-posta</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Şifre</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-lock"></i> Şifre Tekrar</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-user-plus"></i> Kayıt Ol
+                </button>
+                <p class="modal-switch">
+                    Zaten hesabınız var mı? <a href="#" onclick="switchToLogin()">Giriş Yap</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Film Detay Modal -->
+    <div id="filmDetailModal" class="modal">
+        <div class="modal-content film-detail-modal">
+            <span class="modal-close" onclick="closeFilmDetailModal()">&times;</span>
+            <div id="filmDetailContent" class="film-detail-content">
+                <!-- Film detayları buraya yüklenecek -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/lang.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/modal-auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - Film Sitesi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <i class="fas fa-film"></i>
+                        <span>FilmSitesi</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Anasayfa</a></li>
+                    <li><a href="/filmler.html" class="nav-link">Filmler</a></li>
+                    <li><a href="/kategoriler.html" class="nav-link">Kategoriler</a></li>
+                    <li><a href="/hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="btn-login" onclick="window.location.href='/giris.html'">
+                        <i class="fas fa-user"></i> Giriş
+                    </button>
+                    <button class="btn-register" onclick="window.location.href='/kayit.html'">
+                        Kayıt Ol
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kayıt Form -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-box">
+                <div class="auth-header">
+                    <i class="fas fa-user-plus"></i>
+                    <h2>Kayıt Ol</h2>
+                    <p>Yeni hesap oluşturun</p>
+                </div>
+
+                <form id="registerForm" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">
+                                <i class="fas fa-user"></i> Ad
+                            </label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Adınız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">
+                                <i class="fas fa-user"></i> Soyad
+                            </label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Soyadınız">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">
+                            <i class="fas fa-at"></i> Kullanıcı Adı
+                        </label>
+                        <input type="text" id="username" name="username" required placeholder="kullaniciadi" minlength="3">
+                        <small>En az 3 karakter</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            <i class="fas fa-lock"></i> Şifre
+                        </label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••" minlength="6">
+                        <small>En az 6 karakter</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">
+                            <i class="fas fa-lock"></i> Şifre Tekrar
+                        </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="••••••••">
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" required>
+                            <span>Kullanım şartlarını kabul ediyorum</span>
+                        </label>
+                    </div>
+
+                    <div id="errorMessage" class="error-message" style="display: none;"></div>
+                    <div id="successMessage" class="success-message" style="display: none;"></div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-user-plus"></i> Kayıt Ol
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Zaten hesabınız var mı? <a href="/giris.html">Giriş Yap</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

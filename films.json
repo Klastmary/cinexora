@@ -1,0 +1,2140 @@
+[
+  {
+    "id": 126,
+    "tmdbId": 155,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "duration": 152,
+    "rating": 9,
+    "description": "Batman, Joker ile karşı karşıya gelir.",
+    "detailedPlot": "Batman, Jim Gordon ve Harvey Dent, Gotham'ı suçtan kurtarmak için güçlerini birleştirir. Ancak Joker ortaya çıkar.",
+    "cast": [
+      {
+        "name": "Christian Bale",
+        "character": "Batman"
+      },
+      {
+        "name": "Heath Ledger",
+        "character": "Joker"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/hqkIcbrOHL86UncnHIsHVcVmzue.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "superhero",
+      "batman"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.584Z",
+    "descriptionEn": "Batman faces the Joker.",
+    "detailedPlotEn": "Batman, Jim Gordon and Harvey Dent join forces to save Gotham from crime. But the Joker emerges."
+  },
+  {
+    "id": 127,
+    "tmdbId": 76341,
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "director": "George Miller",
+    "genre": [
+      "Action",
+      "Adventure"
+    ],
+    "duration": 120,
+    "rating": 8.1,
+    "description": "Post-apokaliptik bir dünyada hayatta kalma mücadelesi.",
+    "detailedPlot": "Max, çöl ortasında bir grup kadını kurtarmak için Furiosa ile birlikte hareket eder.",
+    "cast": [
+      {
+        "name": "Tom Hardy",
+        "character": "Max"
+      },
+      {
+        "name": "Charlize Theron",
+        "character": "Furiosa"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg"
+    },
+    "country": "Australia",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "action",
+      "desert"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.584Z",
+    "descriptionEn": "Survival struggle in a post-apocalyptic world.",
+    "detailedPlotEn": "Max teams up with Furiosa to rescue a group of women in the desert."
+  },
+  {
+    "id": 128,
+    "tmdbId": 245891,
+    "title": "John Wick",
+    "year": 2014,
+    "director": "Chad Stahelski",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "duration": 101,
+    "rating": 7.4,
+    "description": "Emekli bir suikastçının intikam hikayesi.",
+    "detailedPlot": "John Wick, köpeğini öldürenlerin peşine düşer ve yeraltı dünyasıyla yüzleşir.",
+    "cast": [
+      {
+        "name": "Keanu Reeves",
+        "character": "John Wick"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/umC04Cozevu8nn3JTDJ1pc7PVTn.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "revenge",
+      "assassin"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.584Z",
+    "descriptionEn": "A retired assassin's revenge story.",
+    "detailedPlotEn": "John Wick goes after those who killed his dog and faces the underworld."
+  },
+  {
+    "id": 129,
+    "tmdbId": 299534,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "director": "Anthony Russo, Joe Russo",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "duration": 181,
+    "rating": 8.4,
+    "description": "Avengers, Thanos'u yenmek için son savaşlarını verir.",
+    "detailedPlot": "Avengers, Infinity War'daki yenilginin ardından Thanos'u bulmak ve dünyayı kurtarmak için zaman yolculuğu yapar.",
+    "cast": [
+      {
+        "name": "Robert Downey Jr.",
+        "character": "Iron Man"
+      },
+      {
+        "name": "Chris Evans",
+        "character": "Captain America"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "superhero",
+      "marvel"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.584Z",
+    "descriptionEn": "The Avengers fight their final battle against Thanos.",
+    "detailedPlotEn": "After the defeat in Infinity War, the Avengers time travel to find Thanos and save the world."
+  },
+  {
+    "id": 130,
+    "tmdbId": 98,
+    "title": "Gladiator",
+    "year": 2000,
+    "director": "Ridley Scott",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "duration": 155,
+    "rating": 8.5,
+    "description": "Roma generali intikam için gladyatör olur.",
+    "detailedPlot": "Maximus, ailesi öldürüldükten sonra köle olarak satılır ve gladyatör arenasında savaşır.",
+    "cast": [
+      {
+        "name": "Russell Crowe",
+        "character": "Maximus"
+      },
+      {
+        "name": "Joaquin Phoenix",
+        "character": "Commodus"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/sOMu0BTniQfWcMJLqY9CVIyS0CQ.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "roman",
+      "revenge"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.584Z",
+    "descriptionEn": "A Roman general becomes a gladiator for revenge.",
+    "detailedPlotEn": "After his family is killed, Maximus is sold as a slave and fights in the gladiator arena."
+  },
+  {
+    "id": 131,
+    "tmdbId": 27205,
+    "title": "Inception",
+    "year": 2010,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
+    "duration": 148,
+    "rating": 8.8,
+    "description": "Rüyalara girip sır çalan bir hırsızın hikayesi.",
+    "detailedPlot": "Dom Cobb, rüyalara girip insanların bilinçaltından sır çalma konusunda uzmanlaşmış bir hırsızdır.",
+    "cast": [
+      {
+        "name": "Leonardo DiCaprio",
+        "character": "Cobb"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/s2bT29y0ngXxxu2IA8AOzzXTRhd.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "dreams",
+      "mind-bending"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.584Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A thief who steals secrets from dreams.",
+    "detailedPlotEn": "Dom Cobb is a thief specialized in entering dreams and stealing secrets from people's subconscious."
+  },
+  {
+    "id": 132,
+    "tmdbId": 603,
+    "title": "The Matrix",
+    "year": 1999,
+    "director": "Lana Wachowski",
+    "genre": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "duration": 136,
+    "rating": 8.7,
+    "description": "Gerçekliğin simüle edilmiş bir dünya olduğunu keşfeden bir programcı.",
+    "detailedPlot": "Neo, Matrix adı verilen bir simülasyonun içinde yaşadığını öğrenir.",
+    "cast": [
+      {
+        "name": "Keanu Reeves",
+        "character": "Neo"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/icmmSD4vTTDKOq2vvdulafOGw93.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "cyberpunk",
+      "ai"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A programmer discovers reality is a simulated world.",
+    "detailedPlotEn": "Neo learns that he lives in a simulation called the Matrix."
+  },
+  {
+    "id": 133,
+    "tmdbId": 157336,
+    "title": "Interstellar",
+    "year": 2014,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Sci-Fi",
+      "Drama"
+    ],
+    "duration": 169,
+    "rating": 8.6,
+    "description": "İnsanlık için yeni bir yuva arayan astronotlar.",
+    "detailedPlot": "Cooper, insanlık için yeni bir gezegen bulmak amacıyla yıldızlararası bir yolculuğa çıkar.",
+    "cast": [
+      {
+        "name": "Matthew McConaughey",
+        "character": "Cooper"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "space",
+      "time"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Astronauts searching for a new home for humanity.",
+    "detailedPlotEn": "Cooper embarks on an interstellar journey to find a new planet for humanity."
+  },
+  {
+    "id": 134,
+    "tmdbId": 335984,
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "director": "Denis Villeneuve",
+    "genre": [
+      "Sci-Fi",
+      "Drama",
+      "Mystery"
+    ],
+    "duration": 164,
+    "rating": 8,
+    "description": "Gelecekte replicant avcısı yeni bir gizemle karşı karşıya kalır.",
+    "detailedPlot": "K, kayıp bir replicant'ı bulmakla görevlendirilir ve bu onu büyük bir sırrın peşine düşürür.",
+    "cast": [
+      {
+        "name": "Ryan Gosling",
+        "character": "K"
+      },
+      {
+        "name": "Harrison Ford",
+        "character": "Rick Deckard"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/8RKBHHRqOMOLh5qW3sS6TSbdXDA.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "cyberpunk",
+      "future"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A replicant hunter faces a new mystery in the future.",
+    "detailedPlotEn": "K is tasked with finding a missing replicant, leading him to a great secret."
+  },
+  {
+    "id": 135,
+    "tmdbId": 438631,
+    "title": "Dune",
+    "year": 2021,
+    "director": "Denis Villeneuve",
+    "genre": [
+      "Sci-Fi",
+      "Adventure",
+      "Drama"
+    ],
+    "duration": 155,
+    "rating": 8,
+    "description": "Çöl gezegeni Arrakis'te güç mücadelesi.",
+    "detailedPlot": "Paul Atreides, ailesiyle birlikte tehlikeli çöl gezegeni Arrakis'e taşınır ve kaderi değişir.",
+    "cast": [
+      {
+        "name": "Timothée Chalamet",
+        "character": "Paul"
+      },
+      {
+        "name": "Zendaya",
+        "character": "Chani"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/iopYFB1B6Bh7FWZh3onQhph1sih.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "space",
+      "desert"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Power struggle on the desert planet Arrakis.",
+    "detailedPlotEn": "Paul Atreides moves to the dangerous desert planet Arrakis with his family and his destiny changes."
+  },
+  {
+    "id": 136,
+    "tmdbId": 278,
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "genre": [
+      "Drama"
+    ],
+    "duration": 142,
+    "rating": 9.3,
+    "description": "İki hükümlünün hapishanedeki dostluk hikayesi.",
+    "detailedPlot": "Andy Dufresne, hapse mahkum edilir ve Red ile arkadaş olur.",
+    "cast": [
+      {
+        "name": "Tim Robbins",
+        "character": "Andy"
+      },
+      {
+        "name": "Morgan Freeman",
+        "character": "Red"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "prison",
+      "hope"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Friendship story of two prisoners.",
+    "detailedPlotEn": "Andy Dufresne is imprisoned and becomes friends with Red."
+  },
+  {
+    "id": 137,
+    "tmdbId": 13,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "director": "Robert Zemeckis",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "duration": 142,
+    "rating": 8.8,
+    "description": "Düşük IQ'ya sahip ama iyi kalpli bir adamın hikayesi.",
+    "detailedPlot": "Forrest Gump, hayatının önemli olaylarını anlatır.",
+    "cast": [
+      {
+        "name": "Tom Hanks",
+        "character": "Forrest"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/7c9UVPPiTPltouxRVY6N9uUaR0d.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "inspiring",
+      "life"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Story of a man with low IQ but a good heart.",
+    "detailedPlotEn": "Forrest Gump narrates the important events of his life."
+  },
+  {
+    "id": 138,
+    "tmdbId": 238,
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "duration": 175,
+    "rating": 9.2,
+    "description": "Güçlü bir mafya ailesinin hikayesi.",
+    "detailedPlot": "Don Vito Corleone, mafya imparatorluğunun kontrolünü oğluna devreder.",
+    "cast": [
+      {
+        "name": "Marlon Brando",
+        "character": "Vito"
+      },
+      {
+        "name": "Al Pacino",
+        "character": "Michael"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/tmU7GeKVybMWFButWEGl2M4GeiP.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English",
+      "Italian"
+    ],
+    "tags": [
+      "mafia",
+      "family"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Story of a powerful mafia family.",
+    "detailedPlotEn": "Don Vito Corleone transfers control of his mafia empire to his son."
+  },
+  {
+    "id": 139,
+    "tmdbId": 550,
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "genre": [
+      "Drama"
+    ],
+    "duration": 139,
+    "rating": 8.8,
+    "description": "Uykusuzluktan muzdarip bir adam dövüş kulübü kurar.",
+    "detailedPlot": "Tyler Durden ile tanışan anlatıcı, yeraltı dövüş kulübü kurar.",
+    "cast": [
+      {
+        "name": "Brad Pitt",
+        "character": "Tyler"
+      },
+      {
+        "name": "Edward Norton",
+        "character": "Narrator"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/52AfXWuXCHn3UjD17rBruA9f5qb.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "psychological",
+      "twist"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A man suffering from insomnia starts a fight club.",
+    "detailedPlotEn": "The narrator meets Tyler Durden and starts an underground fight club."
+  },
+  {
+    "id": 174,
+    "tmdbId": 49026,
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "duration": 165,
+    "rating": 8.6,
+    "description": "Batman, Gotham Şehri'ni Bane'den kurtarmak için dövüşür.",
+    "detailedPlot": "Batman, Gotham Şehri'ni Bane'in tehdidinden kurtarmak için dövüşür ve şehri kurtarmak için fedakarlık yapar.",
+    "cast": [
+      {
+        "name": "Christian Bale",
+        "character": "Batman"
+      },
+      {
+        "name": "Tom Hardy",
+        "character": "Bane"
+      }
+    ],
+    "images": {
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/5KCVkau1HEl7ZzfPsKkW5g9c7e.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "superhero",
+      "action"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Batman fights to save Gotham City from Bane.",
+    "detailedPlotEn": "Batman fights to save Gotham City from Bane's threat and makes a sacrifice to save the city."
+  },
+  {
+    "id": 140,
+    "tmdbId": 497,
+    "title": "The Green Mile",
+    "year": 1999,
+    "director": "Frank Darabont",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Fantasy"
+    ],
+    "duration": 189,
+    "rating": 8.6,
+    "description": "Ölüm hücresindeki bir gardiyan ve mucizevi güçleri olan bir mahkum.",
+    "detailedPlot": "Paul Edgecomb, ölüm hücresinde çalışan bir gardiyandır ve John Coffey adlı mahkumla tanışır.",
+    "cast": [
+      {
+        "name": "Tom Hanks",
+        "character": "Paul"
+      },
+      {
+        "name": "Michael Clarke Duncan",
+        "character": "John"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/Rlt20sEbOQKPVjiawkq4PGWGqI.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "prison",
+      "supernatural"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A death row guard and a prisoner with miraculous powers.",
+    "detailedPlotEn": "Paul Edgecomb is a guard on death row and meets a prisoner named John Coffey."
+  },
+  {
+    "id": 141,
+    "tmdbId": 424,
+    "title": "Schindler's List",
+    "year": 1993,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Biography",
+      "Drama",
+      "History"
+    ],
+    "duration": 195,
+    "rating": 9,
+    "description": "II. Dünya Savaşı sırasında bir iş adamının Yahudi işçileri kurtarma hikayesi.",
+    "detailedPlot": "Oskar Schindler, savaş sırasında Yahudi işçileri fabrikasında çalıştırarak hayatlarını kurtarır.",
+    "cast": [
+      {
+        "name": "Liam Neeson",
+        "character": "Schindler"
+      },
+      {
+        "name": "Ralph Fiennes",
+        "character": "Amon"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/c8Ass7acuOe4za6DhSattE359gr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/zb6fM1CX41D9rth2RGLLQnW6Dvl.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English",
+      "German",
+      "Polish"
+    ],
+    "tags": [
+      "holocaust",
+      "war"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A businessman's story of saving Jewish workers during WWII.",
+    "detailedPlotEn": "Oskar Schindler saves lives by employing Jewish workers in his factory during the war."
+  },
+  {
+    "id": 142,
+    "tmdbId": 120467,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "director": "Wes Anderson",
+    "genre": [
+      "Adventure",
+      "Comedy",
+      "Crime"
+    ],
+    "duration": 99,
+    "rating": 8.1,
+    "description": "Lüks bir otelde concierge ve lobi görevlisinin macera dolu hikayesi.",
+    "detailedPlot": "Monsieur Gustave H., otel müdürü olarak çalışırken bir cinayetle suçlanır.",
+    "cast": [
+      {
+        "name": "Ralph Fiennes",
+        "character": "Gustave"
+      },
+      {
+        "name": "Tony Revolori",
+        "character": "Zero"
+      }
+    ],
+    "images": {
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1_SX300.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/2eL9tOa9O2eGgGeiOW2T5zUgDj.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "hotel",
+      "adventure"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Adventurous story of a concierge and lobby boy at a luxury hotel.",
+    "detailedPlotEn": "Monsieur Gustave H. is accused of murder while working as a hotel manager."
+  },
+  {
+    "id": 143,
+    "tmdbId": 496243,
+    "title": "Parasite",
+    "year": 2019,
+    "director": "Bong Joon Ho",
+    "genre": [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    "duration": 132,
+    "rating": 8.6,
+    "description": "Yoksul bir aile, zengin bir ailenin evinde çalışmak için plan yapar.",
+    "detailedPlot": "Kim ailesi, zengin Park ailesinin evinde çalışmaya başlar ve beklenmedik olaylar yaşanır.",
+    "cast": [
+      {
+        "name": "Song Kang-ho",
+        "character": "Ki-taek"
+      },
+      {
+        "name": "Lee Sun-kyun",
+        "character": "Dong-ik"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg"
+    },
+    "country": "South Korea",
+    "language": [
+      "Korean",
+      "English"
+    ],
+    "tags": [
+      "social",
+      "dark comedy"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A poor family plans to work in a rich family's house.",
+    "detailedPlotEn": "The Kim family starts working in the rich Park family's house and unexpected events occur."
+  },
+  {
+    "id": 144,
+    "tmdbId": 680,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "director": "Quentin Tarantino",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "duration": 154,
+    "rating": 8.9,
+    "description": "Los Angeles'ın yeraltı dünyasından suç hikayeleri.",
+    "detailedPlot": "İki kiralık katil, bir boksör ve diğer karakterlerin hikayeleri iç içe geçer.",
+    "cast": [
+      {
+        "name": "John Travolta",
+        "character": "Vincent"
+      },
+      {
+        "name": "Samuel L. Jackson",
+        "character": "Jules"
+      }
+    ],
+    "images": {
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "crime",
+      "nonlinear"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Crime stories from LA's underworld.",
+    "detailedPlotEn": "Stories of two hitmen, a boxer and other characters intertwine."
+  },
+  {
+    "id": 145,
+    "tmdbId": 106646,
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Biography",
+      "Comedy",
+      "Crime"
+    ],
+    "duration": 180,
+    "rating": 8.2,
+    "description": "Wall Street borsacısının yükseliş ve düşüş hikayesi.",
+    "detailedPlot": "Jordan Belfort, Wall Street'te başarılı bir borsacı olur ama yasadışı işlere karışır.",
+    "cast": [
+      {
+        "name": "Leonardo DiCaprio",
+        "character": "Jordan"
+      },
+      {
+        "name": "Jonah Hill",
+        "character": "Donnie"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/vK1o5rZGqxyovfIhZyMELb8iNMi.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "wall street",
+      "biography"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Rise and fall story of a Wall Street stockbroker.",
+    "detailedPlotEn": "Jordan Belfort becomes a successful stockbroker on Wall Street but gets involved in illegal activities."
+  },
+  {
+    "id": 146,
+    "tmdbId": 138843,
+    "title": "The Conjuring",
+    "year": 2013,
+    "director": "James Wan",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "duration": 112,
+    "rating": 7.5,
+    "description": "Paranormal araştırmacılar bir aileye yardım eder.",
+    "detailedPlot": "Ed ve Lorraine Warren, perili bir eve taşınan aileye yardım etmek için çağrılır.",
+    "cast": [
+      {
+        "name": "Patrick Wilson",
+        "character": "Ed"
+      },
+      {
+        "name": "Vera Farmiga",
+        "character": "Lorraine"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/wVYREutTvI2tmxr6ujrHT704wGF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/yyFc8Iclt2jxPmLztbP617Nw4a.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "haunted",
+      "paranormal"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Paranormal investigators help a family.",
+    "detailedPlotEn": "Ed and Lorraine Warren are called to help a family that moved into a haunted house."
+  },
+  {
+    "id": 147,
+    "tmdbId": 493922,
+    "title": "Hereditary",
+    "year": 2018,
+    "director": "Ari Aster",
+    "genre": [
+      "Drama",
+      "Horror",
+      "Mystery"
+    ],
+    "duration": 127,
+    "rating": 7.3,
+    "description": "Bir aile, annenin ölümünden sonra korkunç sırlarla yüzleşir.",
+    "detailedPlot": "Annie Graham, annesinin ölümünden sonra aile sırlarını keşfeder.",
+    "cast": [
+      {
+        "name": "Toni Collette",
+        "character": "Annie"
+      },
+      {
+        "name": "Alex Wolff",
+        "character": "Peter"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/p515QyYJfI9tHlqp5vDUHs6A6Ry.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/pIFiirAumMIiYfQHHuC6bPdCpzR.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "family",
+      "supernatural"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A family faces terrible secrets after mother's death.",
+    "detailedPlotEn": "Annie Graham discovers family secrets after her mother's death."
+  },
+  {
+    "id": 148,
+    "tmdbId": 419430,
+    "title": "Get Out",
+    "year": 2017,
+    "director": "Jordan Peele",
+    "genre": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "duration": 104,
+    "rating": 7.8,
+    "description": "Genç bir adam kız arkadaşının ailesini ziyaret eder ve korkunç sırlar keşfeder.",
+    "detailedPlot": "Chris, kız arkadaşının ailesinin evine gittiğinde tuhaf olaylarla karşılaşır.",
+    "cast": [
+      {
+        "name": "Daniel Kaluuya",
+        "character": "Chris"
+      },
+      {
+        "name": "Allison Williams",
+        "character": "Rose"
+      }
+    ],
+    "images": {
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_SX300.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/8NJCGQRxzQKOX2wz1mT5tV1vha.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "racism",
+      "psychological"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "A young man visits his girlfriend's family and discovers terrible secrets.",
+    "detailedPlotEn": "Chris encounters strange events when he goes to his girlfriend's family home."
+  },
+  {
+    "id": 149,
+    "tmdbId": 700,
+    "title": "A Nightmare on Elm Street",
+    "year": 1984,
+    "director": "Wes Craven",
+    "genre": [
+      "Horror"
+    ],
+    "duration": 91,
+    "rating": 7.4,
+    "description": "Gençler, rüyalarında öldüren bir katille karşı karşıya kalır.",
+    "detailedPlot": "Freddy Krueger, gençlerin rüyalarına girerek onları öldürür.",
+    "cast": [
+      {
+        "name": "Robert Englund",
+        "character": "Freddy"
+      },
+      {
+        "name": "Heather Langenkamp",
+        "character": "Nancy"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/AcKVyI1lQXUwPKeJHFs6rQ3V7g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/szGyWNKPYfO8cMkpE8YvTcMzR0z.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "slasher",
+      "dreams"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Teenagers face a killer who kills in dreams.",
+    "detailedPlotEn": "Freddy Krueger enters teenagers' dreams and kills them."
+  },
+  {
+    "id": 150,
+    "tmdbId": 565,
+    "title": "The Ring",
+    "year": 2002,
+    "director": "Gore Verbinski",
+    "genre": [
+      "Horror",
+      "Mystery"
+    ],
+    "duration": 115,
+    "rating": 7.1,
+    "description": "Korkunç bir video kaseti izleyenler 7 gün sonra ölür.",
+    "detailedPlot": "Rachel, yeğeninin ölümünü araştırmaya başlar ve lanetli bir video keşfeder.",
+    "cast": [
+      {
+        "name": "Naomi Watts",
+        "character": "Rachel"
+      },
+      {
+        "name": "Martin Henderson",
+        "character": "Noah"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/kCJjNZcEJDJ5I2HlHPNu4aAJwC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/xU5vWnhWLvIDwDvqQ6bE7b2E8q8.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "curse",
+      "video"
+    ],
+    "isFeatured": false,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T01:40:49.585Z",
+    "updatedAt": "2025-10-16T01:40:49.585Z",
+    "descriptionEn": "Those who watch a terrible videotape die after 7 days.",
+    "detailedPlotEn": "Rachel starts investigating her niece's death and discovers a cursed video."
+  },
+  {
+    "id": 151,
+    "tmdbId": 597,
+    "title": "Titanic",
+    "year": 1997,
+    "director": "James Cameron",
+    "genre": [
+      "Drama",
+      "Romance"
+    ],
+    "duration": 194,
+    "rating": 7.9,
+    "description": "Titanik gemisinde başlayan trajik aşk hikayesi.",
+    "detailedPlot": "Jack ve Rose, Titanik gemisinde tanışır ve aşık olurlar.",
+    "cast": [
+      {
+        "name": "Leonardo DiCaprio",
+        "character": "Jack"
+      },
+      {
+        "name": "Kate Winslet",
+        "character": "Rose"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/xJlFZRj4b7Lq8qNdHQj3ELdJHkJ.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "romance",
+      "disaster"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:07:53.454Z",
+    "updatedAt": "2025-10-16T02:07:53.455Z",
+    "descriptionEn": "Tragic love story that begins on the Titanic.",
+    "detailedPlotEn": "Jack and Rose meet on the Titanic and fall in love."
+  },
+  {
+    "id": 152,
+    "tmdbId": 8587,
+    "title": "The Lion King",
+    "year": 1994,
+    "director": "Roger Allers",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Drama"
+    ],
+    "duration": 88,
+    "rating": 8.5,
+    "description": "Genç bir aslanın kral olma yolculuğu.",
+    "detailedPlot": "Simba, babasının ölümünden sonra krallığını geri almak için mücadele eder.",
+    "cast": [
+      {
+        "name": "Matthew Broderick",
+        "character": "Simba"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/1LRLLWGvs5sZdTzuMqLEahb88Pc.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "animation",
+      "family"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:07:53.455Z",
+    "updatedAt": "2025-10-16T02:07:53.455Z",
+    "descriptionEn": "A young lion's journey to become king.",
+    "detailedPlotEn": "After his father's death, Simba struggles to reclaim his kingdom."
+  },
+  {
+    "id": 153,
+    "tmdbId": 862,
+    "title": "Toy Story",
+    "year": 1995,
+    "director": "John Lasseter",
+    "genre": [
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    "duration": 81,
+    "rating": 8.3,
+    "description": "Oyuncakların gizli hayatı.",
+    "detailedPlot": "Woody ve Buzz Lightyear, sahibinin en sevdiği oyuncak olmak için yarışır.",
+    "cast": [
+      {
+        "name": "Tom Hanks",
+        "character": "Woody"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/6sGvlMWdxKXJ0GYRDBgQMJiJWS.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "animation",
+      "pixar"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:07:53.455Z",
+    "updatedAt": "2025-10-16T02:07:53.455Z",
+    "descriptionEn": "Secret life of toys.",
+    "detailedPlotEn": "Woody and Buzz Lightyear compete to be their owner's favorite toy."
+  },
+  {
+    "id": 154,
+    "tmdbId": 634649,
+    "title": "Spider-Man: No Way Home",
+    "year": 2021,
+    "director": "Jon Watts",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "duration": 148,
+    "rating": 8.2,
+    "description": "Spider-Man, çoklu evren tehdidiyle karşı karşıya.",
+    "detailedPlot": "Peter Parker, Doctor Strange ile yaptığı büyü sonrası çoklu evren açılır.",
+    "cast": [
+      {
+        "name": "Tom Holland",
+        "character": "Spider-Man"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "superhero",
+      "marvel"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:07:53.455Z",
+    "updatedAt": "2025-10-16T02:07:53.455Z",
+    "descriptionEn": "Spider-Man faces multiverse threat.",
+    "detailedPlotEn": "After a spell with Doctor Strange, the multiverse opens."
+  },
+  {
+    "id": 155,
+    "tmdbId": 414906,
+    "title": "The Batman",
+    "year": 2022,
+    "director": "Matt Reeves",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "duration": 176,
+    "rating": 7.8,
+    "description": "Batman, Riddler ile karşı karşıya gelir.",
+    "detailedPlot": "Bruce Wayne, Gotham şehrinde Riddler adlı seri katilin peşine düşer.",
+    "cast": [
+      {
+        "name": "Robert Pattinson",
+        "character": "Batman"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "superhero",
+      "batman"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:07:53.455Z",
+    "updatedAt": "2025-10-16T02:07:53.455Z",
+    "descriptionEn": "Batman faces the Riddler.",
+    "detailedPlotEn": "Bruce Wayne goes after a serial killer called the Riddler in Gotham city."
+  },
+  {
+    "id": 156,
+    "tmdbId": 475557,
+    "title": "Joker",
+    "year": 2019,
+    "director": "Todd Phillips",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "duration": 122,
+    "rating": 8.4,
+    "description": "Bir komedyenin Joker olma hikayesi.",
+    "detailedPlot": "Arthur Fleck, toplum tarafından dışlanan bir komedyendir ve Joker olur.",
+    "cast": [
+      {
+        "name": "Joaquin Phoenix",
+        "character": "Joker"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "villain",
+      "psychological"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:08:54.590Z",
+    "updatedAt": "2025-10-16T02:08:54.591Z",
+    "descriptionEn": "A comedian's story of becoming the Joker.",
+    "detailedPlotEn": "Arthur Fleck is a comedian rejected by society and becomes the Joker."
+  },
+  {
+    "id": 157,
+    "tmdbId": 274,
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "duration": 118,
+    "rating": 8.6,
+    "description": "FBI ajanı, seri katili yakalamak için Hannibal Lecter ile görüşür.",
+    "detailedPlot": "Clarice Starling, Buffalo Bill adlı seri katili yakalamak için Dr. Hannibal Lecter ile görüşür.",
+    "cast": [
+      {
+        "name": "Jodie Foster",
+        "character": "Clarice"
+      },
+      {
+        "name": "Anthony Hopkins",
+        "character": "Hannibal"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "thriller",
+      "serial killer"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:08:54.591Z",
+    "updatedAt": "2025-10-16T02:08:54.591Z",
+    "descriptionEn": "FBI agent meets Hannibal Lecter to catch a serial killer.",
+    "detailedPlotEn": "Clarice Starling meets Dr. Hannibal Lecter to catch a serial killer called Buffalo Bill."
+  },
+  {
+    "id": 158,
+    "tmdbId": 807,
+    "title": "Se7en",
+    "year": 1995,
+    "director": "David Fincher",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "duration": 127,
+    "rating": 8.6,
+    "description": "İki dedektif, yedi ölümcül günahı temel alan cinayetleri araştırır.",
+    "detailedPlot": "Dedektifler Mills ve Somerset, yedi ölümcül günahı temel alan seri cinayetleri çözmeye çalışır.",
+    "cast": [
+      {
+        "name": "Brad Pitt",
+        "character": "Mills"
+      },
+      {
+        "name": "Morgan Freeman",
+        "character": "Somerset"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/87hTDiay2N2qWyX4Ds7ybXi9h8I.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "thriller",
+      "dark"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:08:54.591Z",
+    "updatedAt": "2025-10-16T02:08:54.591Z",
+    "descriptionEn": "Two detectives investigate murders based on seven deadly sins.",
+    "detailedPlotEn": "Detectives Mills and Somerset try to solve serial murders based on the seven deadly sins."
+  },
+  {
+    "id": 159,
+    "tmdbId": 1124,
+    "title": "The Prestige",
+    "year": 2006,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "duration": 130,
+    "rating": 8.5,
+    "description": "İki sihirbazın rekabeti.",
+    "detailedPlot": "İki rakip sihirbaz, birbirlerini geçmek için tehlikeli oyunlar oynar.",
+    "cast": [
+      {
+        "name": "Christian Bale",
+        "character": "Alfred"
+      },
+      {
+        "name": "Hugh Jackman",
+        "character": "Robert"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/tRNlZbgNCNOpLpbPEz5L8G8A0JN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/h9IVNp0TZc3mqv2qOAn7o6lWgdH.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "magic",
+      "mystery"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:08:54.591Z",
+    "updatedAt": "2025-10-16T02:08:54.591Z",
+    "descriptionEn": "Rivalry of two magicians.",
+    "detailedPlotEn": "Two rival magicians play dangerous games to outdo each other."
+  },
+  {
+    "id": 160,
+    "tmdbId": 77,
+    "title": "Memento",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Mystery",
+      "Thriller"
+    ],
+    "duration": 113,
+    "rating": 8.4,
+    "description": "Kısa süreli hafıza kaybı olan bir adamın intikam hikayesi.",
+    "detailedPlot": "Leonard, karısının katilini bulmak için kısa süreli hafıza kaybına rağmen mücadele eder.",
+    "cast": [
+      {
+        "name": "Guy Pearce",
+        "character": "Leonard"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/yuNs09hvpHVU1cBTCAk9zxsL2oW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/5kJfbfVJGCdPJrHEcHJEJ7FqvKF.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "mind-bending",
+      "nonlinear"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:08:54.591Z",
+    "updatedAt": "2025-10-16T02:08:54.591Z",
+    "descriptionEn": "Revenge story of a man with short-term memory loss.",
+    "detailedPlotEn": "Leonard struggles to find his wife's killer despite short-term memory loss."
+  },
+  {
+    "id": 161,
+    "tmdbId": 769,
+    "title": "Goodfellas",
+    "year": 1990,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "duration": 145,
+    "rating": 8.7,
+    "description": "Mafya hayatının gerçek hikayesi.",
+    "detailedPlot": "Henry Hill, mafya dünyasında yükselir ve düşer.",
+    "cast": [
+      {
+        "name": "Robert De Niro",
+        "character": "Jimmy"
+      },
+      {
+        "name": "Ray Liotta",
+        "character": "Henry"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/sw7mordbZxgITU877yTpZCud90M.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "mafia",
+      "crime"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:09:39.114Z",
+    "updatedAt": "2025-10-16T02:09:39.115Z",
+    "descriptionEn": "True story of mafia life.",
+    "detailedPlotEn": "Henry Hill rises and falls in the mafia world."
+  },
+  {
+    "id": 162,
+    "tmdbId": 1422,
+    "title": "The Departed",
+    "year": 2006,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "duration": 151,
+    "rating": 8.5,
+    "description": "Polis ve mafya arasında çifte ajan oyunu.",
+    "detailedPlot": "Bir polis mafyaya sızar, bir mafya da polise sızar.",
+    "cast": [
+      {
+        "name": "Leonardo DiCaprio",
+        "character": "Billy"
+      },
+      {
+        "name": "Matt Damon",
+        "character": "Colin"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/8Od5zV5lbsI4RxZAZVG0yxS2kTy.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "crime",
+      "undercover"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:09:39.115Z",
+    "updatedAt": "2025-10-16T02:09:39.115Z",
+    "descriptionEn": "Double agent game between police and mafia.",
+    "detailedPlotEn": "A cop infiltrates the mafia, and a mafioso infiltrates the police."
+  },
+  {
+    "id": 163,
+    "tmdbId": 111,
+    "title": "Scarface",
+    "year": 1983,
+    "director": "Brian De Palma",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "duration": 170,
+    "rating": 8.3,
+    "description": "Kübalı bir göçmenin uyuşturucu baronluğuna yükselişi.",
+    "detailedPlot": "Tony Montana, Miami uyuşturucu dünyasında güç ve para peşinde koşar.",
+    "cast": [
+      {
+        "name": "Al Pacino",
+        "character": "Tony Montana"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/6wBI5TJXYmWnOz6Ux9Ywc8qqIJD.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "crime",
+      "drugs"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:09:39.115Z",
+    "updatedAt": "2025-10-16T02:09:39.115Z",
+    "descriptionEn": "A Cuban immigrant's rise to drug lord.",
+    "detailedPlotEn": "Tony Montana chases power and money in Miami's drug world."
+  },
+  {
+    "id": 164,
+    "tmdbId": 524,
+    "title": "Casino",
+    "year": 1995,
+    "director": "Martin Scorsese",
+    "genre": [
+      "Crime",
+      "Drama"
+    ],
+    "duration": 178,
+    "rating": 8.2,
+    "description": "Las Vegas kumarhanelerinin karanlık dünyası.",
+    "detailedPlot": "Sam Rothstein, Las Vegas kumarhanesini yönetirken mafya ve FBI ile uğraşır.",
+    "cast": [
+      {
+        "name": "Robert De Niro",
+        "character": "Sam"
+      },
+      {
+        "name": "Joe Pesci",
+        "character": "Nicky"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/4TS5O1IP42bY2BvgMxL156EENy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/5MlRMG4xfMCwjGWjGPZZDJf0Jjf.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "casino",
+      "mafia"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:09:39.115Z",
+    "updatedAt": "2025-10-16T02:09:39.115Z",
+    "descriptionEn": "Dark world of Las Vegas casinos.",
+    "detailedPlotEn": "Sam Rothstein deals with the mafia and FBI while managing a Las Vegas casino."
+  },
+  {
+    "id": 165,
+    "tmdbId": 949,
+    "title": "Heat",
+    "year": 1995,
+    "director": "Michael Mann",
+    "genre": [
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "duration": 170,
+    "rating": 8.3,
+    "description": "Hırsız ve dedektifin kedi fare oyunu.",
+    "detailedPlot": "Profesyonel hırsız Neil McCauley ve dedektif Vincent Hanna karşı karşıya gelir.",
+    "cast": [
+      {
+        "name": "Al Pacino",
+        "character": "Vincent"
+      },
+      {
+        "name": "Robert De Niro",
+        "character": "Neil"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/zMyfPUelumio3tiDKPffaUpsQTD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/umSVjVdbVwtx5ryCA2QXL44Durz.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "heist",
+      "crime"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:09:39.115Z",
+    "updatedAt": "2025-10-16T02:09:39.115Z",
+    "descriptionEn": "Cat and mouse game between thief and detective.",
+    "detailedPlotEn": "Professional thief Neil McCauley and detective Vincent Hanna face off."
+  },
+  {
+    "id": 166,
+    "tmdbId": 857,
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "director": "Steven Spielberg",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "duration": 169,
+    "rating": 8.6,
+    "description": "II. Dünya Savaşı sırasında bir askeri kurtarma operasyonu.",
+    "detailedPlot": "Bir grup asker, savaşta kaybolan bir askeri bulmak için görevlendirilir.",
+    "cast": [
+      {
+        "name": "Tom Hanks",
+        "character": "Captain Miller"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/7GRxYMJhRs7kWOmXQgKPMdKuNzI.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "war",
+      "wwii"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:10:23.983Z",
+    "updatedAt": "2025-10-16T02:10:23.984Z",
+    "descriptionEn": "A rescue operation during WWII.",
+    "detailedPlotEn": "A group of soldiers is tasked with finding a soldier lost in war."
+  },
+  {
+    "id": 167,
+    "tmdbId": 530915,
+    "title": "1917",
+    "year": 2019,
+    "director": "Sam Mendes",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "duration": 119,
+    "rating": 8.2,
+    "description": "I. Dünya Savaşı sırasında iki askerin tehlikeli görevi.",
+    "detailedPlot": "İki İngiliz askeri, bir saldırıyı durdurmak için düşman hattının arkasına gitmek zorundadır.",
+    "cast": [
+      {
+        "name": "George MacKay",
+        "character": "Schofield"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/2WgieNR1tGHlpJUsolbVzbUbE1O.jpg"
+    },
+    "country": "UK",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "war",
+      "wwi"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:10:23.984Z",
+    "updatedAt": "2025-10-16T02:10:23.984Z",
+    "descriptionEn": "Dangerous mission of two soldiers during WWI.",
+    "detailedPlotEn": "Two British soldiers must go behind enemy lines to stop an attack."
+  },
+  {
+    "id": 168,
+    "tmdbId": 28,
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "director": "Francis Ford Coppola",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "duration": 147,
+    "rating": 8.4,
+    "description": "Vietnam Savaşı sırasında bir albayı bulma görevi.",
+    "detailedPlot": "Kaptan Willard, deli Albay Kurtz u bulmak ve öldürmek için görevlendirilir.",
+    "cast": [
+      {
+        "name": "Martin Sheen",
+        "character": "Willard"
+      },
+      {
+        "name": "Marlon Brando",
+        "character": "Kurtz"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/nKKAagRWXwcvJHXUXlUGHhHhMXu.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "war",
+      "vietnam"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:10:23.984Z",
+    "updatedAt": "2025-10-16T02:10:23.984Z",
+    "descriptionEn": "Mission to find a colonel during Vietnam War.",
+    "detailedPlotEn": "Captain Willard is tasked with finding and killing the mad Colonel Kurtz."
+  },
+  {
+    "id": 169,
+    "tmdbId": 374720,
+    "title": "Dunkirk",
+    "year": 2017,
+    "director": "Christopher Nolan",
+    "genre": [
+      "Action",
+      "Drama",
+      "War"
+    ],
+    "duration": 106,
+    "rating": 7.8,
+    "description": "II. Dünya Savaşı sırasında Dunkirk tahliyesi.",
+    "detailedPlot": "II. Dünya Savaşı sırasında Dunkirk sahilinde mahsur kalan askerler kurtarılmayı bekler.",
+    "cast": [
+      {
+        "name": "Fionn Whitehead",
+        "character": "Tommy"
+      },
+      {
+        "name": "Tom Hardy",
+        "character": "Farrier"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/ebSnODDg9lbsMIaWg2uAbjn7TO5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/fudEG1VUWuOqleXv6NwCExK0VLy.jpg"
+    },
+    "country": "UK",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "war",
+      "wwii"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:10:23.984Z",
+    "updatedAt": "2025-10-16T02:10:23.984Z",
+    "descriptionEn": "Survival struggle during Dunkirk evacuation.",
+    "detailedPlotEn": "During WWII, soldiers stranded on Dunkirk beach await rescue."
+  },
+  {
+    "id": 170,
+    "tmdbId": 792,
+    "title": "Platoon",
+    "year": 1986,
+    "director": "Oliver Stone",
+    "genre": [
+      "Drama",
+      "War"
+    ],
+    "duration": 120,
+    "rating": 8.1,
+    "description": "Vietnam Savaşı nın acımasız gerçekleri.",
+    "detailedPlot": "Genç bir asker, Vietnam Savaşı nın dehşetini yaşar.",
+    "cast": [
+      {
+        "name": "Charlie Sheen",
+        "character": "Chris"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/m3mmFkPQKvPZq5exmh0bDuXlD9T.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/oIWGDhqb7qlh8PZzaFEfLvhPxPZ.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "war",
+      "vietnam"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:10:23.984Z",
+    "updatedAt": "2025-10-16T02:10:23.984Z",
+    "descriptionEn": "Brutal realities of Vietnam War.",
+    "detailedPlotEn": "A young soldier experiences the horrors of the Vietnam War."
+  },
+  {
+    "id": 171,
+    "tmdbId": 694,
+    "title": "The Shining",
+    "year": 1980,
+    "director": "Stanley Kubrick",
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "duration": 146,
+    "rating": 8.4,
+    "description": "Bir otelde dehşet verici olaylar.",
+    "detailedPlot": "Jack Torrance, ailesiyle birlikte izole bir otelde kışı geçirirken delirmeye başlar.",
+    "cast": [
+      {
+        "name": "Jack Nicholson",
+        "character": "Jack"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/xazWoLealQwEgqZ89MLZklLZD3k.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/3wfLj8yx0mQOvXIhFvWdqBYJIvU.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "horror",
+      "psychological"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:11:21.185Z",
+    "updatedAt": "2025-10-16T02:11:21.186Z",
+    "descriptionEn": "Terrifying events at a hotel.",
+    "detailedPlotEn": "Jack Torrance begins to go mad while spending winter with his family in an isolated hotel."
+  },
+  {
+    "id": 172,
+    "tmdbId": 9552,
+    "title": "The Exorcist",
+    "year": 1973,
+    "director": "William Friedkin",
+    "genre": [
+      "Horror"
+    ],
+    "duration": 122,
+    "rating": 8.1,
+    "description": "Şeytana çarpmış bir kızın hikayesi.",
+    "detailedPlot": "Genç bir kız şeytana çarpılır ve iki rahip onu kurtarmaya çalışır.",
+    "cast": [
+      {
+        "name": "Linda Blair",
+        "character": "Regan"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/6AgvYpTfkNXKhv1FhxbFnv0ITjJ.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "horror",
+      "exorcism"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:11:21.186Z",
+    "updatedAt": "2025-10-16T02:11:21.186Z",
+    "descriptionEn": "Story of a girl possessed by the devil.",
+    "detailedPlotEn": "A young girl is possessed by the devil and two priests try to save her."
+  },
+  {
+    "id": 173,
+    "tmdbId": 346364,
+    "title": "It",
+    "year": 2017,
+    "director": "Andy Muschietti",
+    "genre": [
+      "Horror",
+      "Thriller"
+    ],
+    "duration": 135,
+    "rating": 7.3,
+    "description": "Çocukları avlayan korkunç bir palyaço.",
+    "detailedPlot": "Bir grup çocuk, Pennywise adlı korkunç palyaçoya karşı savaşır.",
+    "cast": [
+      {
+        "name": "Bill Skarsgård",
+        "character": "Pennywise"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "horror",
+      "stephen king"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:11:21.186Z",
+    "updatedAt": "2025-10-16T02:11:21.186Z",
+    "descriptionEn": "A terrifying clown hunting children.",
+    "detailedPlotEn": "A group of children fight against a terrifying clown named Pennywise."
+  },
+  {
+    "id": 174,
+    "tmdbId": 1091,
+    "title": "The Thing",
+    "year": 1982,
+    "director": "John Carpenter",
+    "genre": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "duration": 109,
+    "rating": 8.2,
+    "description": "Antarktika da uzaylı yaratık tehdidi.",
+    "detailedPlot": "Antarktika araştırma istasyonunda bir grup bilim insanı, şekil değiştiren uzaylı yaratıkla karşılaşır.",
+    "cast": [
+      {
+        "name": "Kurt Russell",
+        "character": "MacReady"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/fbrONkH5BfpIZdXPJPqvGZF7WGV.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "horror",
+      "alien"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:11:21.186Z",
+    "updatedAt": "2025-10-16T02:11:21.186Z",
+    "descriptionEn": "Alien creature threat in Antarctica.",
+    "detailedPlotEn": "A group of scientists at an Antarctic research station encounter a shape-shifting alien creature."
+  },
+  {
+    "id": 175,
+    "tmdbId": 348,
+    "title": "Alien",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "genre": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "duration": 117,
+    "rating": 8.5,
+    "description": "Uzayda ölümcül bir yaratık.",
+    "detailedPlot": "Nostromo mürettebatı, uzayda ölümcül bir uzaylı yaratıkla karşılaşır.",
+    "cast": [
+      {
+        "name": "Sigourney Weaver",
+        "character": "Ripley"
+      }
+    ],
+    "images": {
+      "poster": "https://image.tmdb.org/t/p/w500/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/original/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg"
+    },
+    "country": "USA",
+    "language": [
+      "English"
+    ],
+    "tags": [
+      "horror",
+      "alien"
+    ],
+    "isFeatured": true,
+    "isNewRelease": false,
+    "createdAt": "2025-10-16T02:11:21.186Z",
+    "updatedAt": "2025-10-16T02:11:21.186Z",
+    "descriptionEn": "A deadly creature in space.",
+    "detailedPlotEn": "The Nostromo crew encounters a deadly alien creature in space."
+  }
+]
