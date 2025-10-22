@@ -1,4 +1,4 @@
-// API Base URL
+// API Base URL - Netlify Functions
 const API_BASE_URL = '/api';
 
 // Auth kontrol ve dropdown
@@ -103,7 +103,7 @@ async function loadFeaturedFilms() {
         const data = await response.json();
         const films = data.films || [];
 
-        if (films && films.length > 0) {
+        if (films.length > 0) {
             container.innerHTML = films.slice(0, 8).map(film => createFilmCard(film)).join('');
         } else {
             container.innerHTML = '<p class="no-results">Henüz film eklenmemiş.</p>';
@@ -124,18 +124,10 @@ async function loadNewReleases() {
         const data = await response.json();
         const films = data.films || [];
 
-        if (films && films.length > 0) {
+        if (films.length > 0) {
             container.innerHTML = films.slice(0, 8).map(film => createFilmCard(film)).join('');
         } else {
-            // Eğer new-releases endpoint'i yoksa, tüm filmleri getir
-            const allFilmsResponse = await fetch(`${API_BASE_URL}/films?limit=8&sortBy=createdAt&sortOrder=desc`);
-            const data = await allFilmsResponse.json();
-            
-            if (data.films && data.films.length > 0) {
-                container.innerHTML = data.films.map(film => createFilmCard(film)).join('');
-            } else {
-                container.innerHTML = '<p class="no-results">Henüz film eklenmemiş.</p>';
-            }
+            container.innerHTML = '<p class="no-results">Henüz film eklenmemiş.</p>';
         }
     } catch (error) {
         console.error('Yeni filmler yüklenemedi:', error);
