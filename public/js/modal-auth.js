@@ -75,6 +75,13 @@ if (loginForm) {
         const errorDiv = document.getElementById('loginError');
 
         try {
+            // Yakında mesajı
+            errorDiv.innerHTML = '<i class="fas fa-clock"></i> Bu özellik yakında eklenecek! Şu anda sitemizi demo modunda gezebilirsiniz.';
+            errorDiv.style.display = 'block';
+            errorDiv.style.background = '#ff9800';
+            errorDiv.style.color = '#fff';
+            return;
+            
             const response = await fetch('/api/auth/login', {
                 method: 'POST',
                 headers: {
@@ -132,12 +139,18 @@ if (registerForm) {
         // Şifre kontrolü
         if (password !== confirmPassword) {
             errorDiv.style.display = 'block';
-            successDiv.style.display = 'none';
             errorDiv.textContent = 'Şifreler eşleşmiyor!';
             return;
         }
 
         try {
+            // Yakında mesajı
+            errorDiv.innerHTML = '<i class="fas fa-clock"></i> Bu özellik yakında eklenecek! Şu anda sitemizi demo modunda gezebilirsiniz.';
+            errorDiv.style.display = 'block';
+            errorDiv.style.background = '#ff9800';
+            errorDiv.style.color = '#fff';
+            return;
+            
             const response = await fetch('/api/auth/register', {
                 method: 'POST',
                 headers: {
@@ -209,14 +222,15 @@ function closeFilmDetailModal() {
 
 async function loadFilmDetail(filmId) {
     try {
-        const API_BASE_URL = window.API_BASE_URL || '/api';
-        const response = await fetch(`${API_BASE_URL}/films/${filmId}`);
-        const film = await response.json();
+        // Static JSON'dan yükle
+        const response = await fetch('/films.json');
+        const allFilms = await response.json();
+        const film = allFilms.find(f => f.id == filmId);
 
-        if (response.ok) {
+        if (film) {
             showFilmDetail(film);
         } else {
-            document.getElementById('filmDetailContent').innerHTML = '<p class="error-message">Film detayları yüklenemedi.</p>';
+            document.getElementById('filmDetailContent').innerHTML = '<p class="error-message">Film bulunamadı.</p>';
         }
     } catch (error) {
         console.error('Film detay yükleme hatası:', error);
