@@ -99,9 +99,9 @@ async function loadFeaturedFilms() {
     if (!container) return;
 
     try {
-        const response = await fetch(`${API_BASE_URL}/films?limit=50&sortBy=rating&sortOrder=desc`);
-        const data = await response.json();
-        const films = data.films || [];
+        const response = await fetch('/films.json');
+        const allFilms = await response.json();
+        const films = allFilms.sort((a, b) => b.rating - a.rating).slice(0, 50);
 
         if (films.length > 0) {
             container.innerHTML = films.slice(0, 8).map(film => createFilmCard(film)).join('');
@@ -120,9 +120,9 @@ async function loadNewReleases() {
     if (!container) return;
 
     try {
-        const response = await fetch(`${API_BASE_URL}/films?limit=50&sortBy=createdAt&sortOrder=desc`);
-        const data = await response.json();
-        const films = data.films || [];
+        const response = await fetch('/films.json');
+        const allFilms = await response.json();
+        const films = allFilms.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).slice(0, 50);
 
         if (films.length > 0) {
             container.innerHTML = films.slice(0, 8).map(film => createFilmCard(film)).join('');
@@ -173,8 +173,12 @@ function goToFilmDetail(filmId) {
 // Arama Sonuçlarını Göster
 async function searchFilms(query) {
     try {
-        const response = await fetch(`${API_BASE_URL}/films?search=${encodeURIComponent(query)}`);
-        const data = await response.json();
+        const response = await fetch('/films.json');
+        const allFilms = await response.json();
+        const data = { films: allFilms.filter(f => 
+            f.title.toLowerCase().includes(query.toLowerCase()) ||
+            (f.description && f.description.toLowerCase().includes(query.toLowerCase()))
+        ) };
         
         // Arama sonuçlarını göstermek için bir dropdown oluştur
         showSearchResults(data.films || []);

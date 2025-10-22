@@ -84,9 +84,44 @@ async function loadFilms() {
         if (currentFilters.sortBy) params.append('sortBy', currentFilters.sortBy);
         if (currentFilters.sortOrder) params.append('sortOrder', currentFilters.sortOrder);
 
-        // API isteği
-        const response = await fetch(`${API_BASE_URL}/films?${params}`);
-        const data = await response.json();
+        // Static JSON
+        const response = await fetch('/films.json');
+        let allFilms = await response.json();
+        
+        // Filtreleme
+        if (currentFilters.search) {
+            const searchLower = currentFilters.search.toLowerCase();
+            allFilms = allFilms.filter(f => 
+                f.title.toLowerCase().includes(searchLower) ||
+                (f.description && f.description.toLowerCase().includes(searchLower))
+            );
+        }
+        if (currentFilters.genre) {
+            allFilms = allFilms.filter(f => {
+                const genres = Array.isArray(f.genre) ? f.genre : [f.genre];
+                return genres.includes(currentFilters.genre);
+            });
+        }
+        if (currentFilters.year) {
+            allFilms = allFilms.filter(f => f.year == currentFilters.year);
+        }
+        
+        // Sıralama
+        if (currentFilters.sortBy === 'rating') {
+            allFilms.sort((a, b) => currentFilters.sortOrder === 'asc' ? a.rating - b.rating : b.rating - a.rating);
+        } else if (currentFilters.sortBy === 'year') {
+            allFilms.sort((a, b) => currentFilters.sortOrder === 'asc' ? a.year - b.year : b.year - a.year);
+        } else if (currentFilters.sortBy === 'title') {
+            allFilms.sort((a, b) => currentFilters.sortOrder === 'asc' ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title));
+        }
+        
+        const data = { 
+            films: allFilms, 
+            pagination: { 
+                totalFilms: allFilms.length, 
+                totalPages: 1 
+            } 
+        };
 
         // URL'yi güncelle
         setUrlParams({
